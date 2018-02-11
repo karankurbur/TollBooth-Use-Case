@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toll Booth Decentralized Application</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./Vehicle.app.js"></script>
+</head>
+
+<body>
+    <h1>Vehicle Page. Your balance is: <div id ="balance"></div> </h1> <button id = "showBalance" onclick = "App.refreshBalance()">Display current balance</button>
+
+  <br><label for="booth"><button id="setOperatorContract" onclick="App.setOperatorContract()">Enter in your operator contract address: </button></label><input type="text" id="operatorAddress" placeholder="0x010101010"></input>
+   <br>
+
+
+  <br><label for="enterBooth"><button id="enterBooth" onclick="App.enterBooth()">Enter Booth:</button></label><input type="text" id="entryBooth" placeholder="0x010101010"></input><input type="text" id="hashed" placeholder=""></input></input><input type="text" id="amountToPay" placeholder="500"></input>
+
+
+  <br>  <br>
+  List of past transactions: 
+  <button id = "showTransactions" onclick = "App.loadTransactions()">Display transactions</button>
+<table id="transcations" style="width:100%">
+  <tr>
+    <th>Entry Booth</th>
+    <th>Exit Booth</th> 
+    <th>Amount</th> 
+  </tr>
+</table>
+  <br>
+  <br>
+
+</body>

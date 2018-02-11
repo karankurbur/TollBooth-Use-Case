@@ -1,0 +1,80 @@
+{
+  "contract_name": "Regulated",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getRegulatorAddress",
+      "outputs": [
+        {
+          "name": "reg",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newRegulator",
+          "type": "address"
+        }
+      ],
+      "name": "setRegulator",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getRegulator",
+      "outputs": [
+        {
+          "name": "regulator",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "givenOwner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousRegulator",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newRegulator",
+          "type": "address"
+        }
+      ],
+      "name": "LogRegulatorSet",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b60405160208061022b833981016040528080519150505b600160a060020a038116151561003b57600080fd5b60008054600160a060020a031916600160a060020a0383161790555b505b6101c3806100686000396000f300606060405263ffffffff60e060020a6000350416630fc77be9811461003a578063cde0a4f814610069578063f7e317f41461003a575b600080fd5b341561004557600080fd5b61004d6100cb565b604051600160a060020a03909116815260200160405180910390f35b341561007457600080fd5b610088600160a060020a03600435166100db565b604051901515815260200160405180910390f35b341561004557600080fd5b61004d6100cb565b604051600160a060020a03909116815260200160405180910390f35b600054600160a060020a03165b90565b6000805433600160a060020a039081169116146100f757600080fd5b33600160a060020a0316151561010c57600080fd5b600054600160a060020a038381169116141561012757600080fd5b600054600160a060020a0380841691167fa32c4b1f26f0d877f643f7fb9db131f9cebf04d120fe5ada74c0bdfc808dab8360405160405180910390a35060008054600160a060020a031916600160a060020a03831617905560015b919050565b600054600160a060020a03165b905600a165627a7a723058208407ffb23319968c8f104fe631880030f2665b5ce0043d3fad1cccfb746528940029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1515570013626
+}

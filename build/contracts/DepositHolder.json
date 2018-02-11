@@ -1,0 +1,115 @@
+{
+  "contract_name": "DepositHolder",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "setOwner",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getOwner",
+      "outputs": [
+        {
+          "name": "outputOwner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getDeposit",
+      "outputs": [
+        {
+          "name": "weis",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "depositWeis",
+          "type": "uint256"
+        }
+      ],
+      "name": "setDeposit",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "minDeposit",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "depositWeis",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogDepositSet",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "LogOwnerSet",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b6040516020806102de833981016040528080519150505b5b60008054600160a060020a03191633600160a060020a03161790555b60018190555b505b6102848061005a6000396000f300606060405263ffffffff60e060020a60003504166313af40358114610045578063893d20e814610078578063c399ec88146100a7578063f5bade66146100cc575b600080fd5b341561005057600080fd5b610064600160a060020a03600435166100f6565b604051901515815260200160405180910390f35b341561008357600080fd5b61008b6101bf565b604051600160a060020a03909116815260200160405180910390f35b34156100b257600080fd5b6100ba6101cf565b60405190815260200160405180910390f35b34156100d757600080fd5b6100646004356101d6565b604051901515815260200160405180910390f35b60008054819033600160a060020a0390811691161461011457600080fd5b33600160a060020a0316151561012957600080fd5b600160a060020a038316151561013e57600080fd5b600054600160a060020a038481169116141561015957600080fd5b50600054600160a060020a03908116908316817fa1d2149652d81eb35c360c115fc7ac594124cb1ea8a5a33e9a7f5768c62869fb60405160405180910390a360008054600160a060020a031916600160a060020a038516179055600191505b5b50919050565b600054600160a060020a03165b90565b6001545b90565b6000805433600160a060020a039081169116146101f257600080fd5b600082116101ff57600080fd5b60015482141561020e57600080fd5b33600160a060020a03167ffa53ebd539f52eb4ef352ffacb2f8f5f8080cd8bb7ebb2f1acab3e1ce4bd65cb8360405190815260200160405180910390a25060018181555b5b9190505600a165627a7a72305820e62ef74decb77a484a1053ab37b619df9882336b254ff8bc1e36bec2707539660029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1515570013617
+}

@@ -1,0 +1,142 @@
+{
+  "contract_name": "MultiplierHolder",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "setOwner",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "vehicleType",
+          "type": "uint256"
+        },
+        {
+          "name": "mult",
+          "type": "uint256"
+        }
+      ],
+      "name": "setMultiplier",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "vehicleType",
+          "type": "uint256"
+        }
+      ],
+      "name": "getMult",
+      "outputs": [
+        {
+          "name": "mult",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getOwner",
+      "outputs": [
+        {
+          "name": "outputOwner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "vehicleType",
+          "type": "uint256"
+        }
+      ],
+      "name": "getMultiplier",
+      "outputs": [
+        {
+          "name": "mult",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "vehicleType",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "multiplier",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogMultiplierSet",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "LogOwnerSet",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b5b60008054600160a060020a03191633600160a060020a03161790555b60005433600160a060020a0390811691161461004857600080fd5b5b5b5b6102fa8061005a6000396000f300606060405263ffffffff60e060020a60003504166313af40358114610050578063333271d01461008357806361f374ac146100b0578063893d20e8146100d8578063adf8252d14610107575b600080fd5b341561005b57600080fd5b61006f600160a060020a036004351661012f565b604051901515815260200160405180910390f35b341561008e57600080fd5b61006f6004356024356101f8565b604051901515815260200160405180910390f35b34156100bb57600080fd5b6100c6600435610296565b60405190815260200160405180910390f35b34156100e357600080fd5b6100eb6102ab565b604051600160a060020a03909116815260200160405180910390f35b341561011257600080fd5b6100c66004356102bb565b60405190815260200160405180910390f35b60008054819033600160a060020a0390811691161461014d57600080fd5b33600160a060020a0316151561016257600080fd5b600160a060020a038316151561017757600080fd5b600054600160a060020a038481169116141561019257600080fd5b50600054600160a060020a03908116908316817fa1d2149652d81eb35c360c115fc7ac594124cb1ea8a5a33e9a7f5768c62869fb60405160405180910390a360008054600160a060020a031916600160a060020a038516179055600191505b5b50919050565b60008054819033600160a060020a0390811691161461021657600080fd5b6000841161022357600080fd5b61022c84610296565b9050801561023957600080fd5b8333600160a060020a03167f5e168e70d5925560e1407b68dc2495afbc25b36217cc6e4167b2cf3f28a46ef18560405190815260200160405180910390a3600084815260016020819052604090912084905591505b5b5092915050565b6000818152600160205260409020545b919050565b600054600160a060020a03165b90565b60006102c682610296565b90505b9190505600a165627a7a723058202690975e9a2277394cb68c48d2a2b18d3eadcb8f87dd760f98e4967f88de04bf0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1515570013624
+}

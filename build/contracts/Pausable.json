@@ -1,0 +1,115 @@
+{
+  "contract_name": "Pausable",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "setOwner",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newState",
+          "type": "bool"
+        }
+      ],
+      "name": "setPaused",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getOwner",
+      "outputs": [
+        {
+          "name": "outputOwner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isPaused",
+      "outputs": [
+        {
+          "name": "isIndeed",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "pausedState",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newPausedState",
+          "type": "bool"
+        }
+      ],
+      "name": "LogPausedSet",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "LogOwnerSet",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b604051602080610326833981016040528080519150505b5b60008054600160a060020a03191633600160a060020a03161790555b6000805460a060020a60ff02191674010000000000000000000000000000000000000000831515021790555b505b6102a6806100806000396000f300606060405263ffffffff60e060020a60003504166313af4035811461004557806316c38b3c14610078578063893d20e8146100a4578063b187bd26146100d3575b600080fd5b341561005057600080fd5b610064600160a060020a03600435166100fa565b604051901515815260200160405180910390f35b341561008357600080fd5b61006460043515156101c3565b604051901515815260200160405180910390f35b34156100af57600080fd5b6100b7610259565b604051600160a060020a03909116815260200160405180910390f35b34156100de57600080fd5b610064610269565b604051901515815260200160405180910390f35b60008054819033600160a060020a0390811691161461011857600080fd5b33600160a060020a0316151561012d57600080fd5b600160a060020a038316151561014257600080fd5b600054600160a060020a038481169116141561015d57600080fd5b50600054600160a060020a03908116908316817fa1d2149652d81eb35c360c115fc7ac594124cb1ea8a5a33e9a7f5768c62869fb60405160405180910390a360008054600160a060020a031916600160a060020a038516179055600191505b5b50919050565b6000805433600160a060020a039081169116146101df57600080fd5b60005460a060020a900460ff16151582151514156101fc57600080fd5b81151533600160a060020a03167fae0f86d9801b0bd39a2ce25d9fd1f202f2fd22e80150be4a99adb0275a635d6c60405160405180910390a3506000805460a060020a60ff02191660a060020a8315150217905560015b5b919050565b600054600160a060020a03165b90565b60005460a060020a900460ff165b905600a165627a7a72305820d7940ce0f678bf1a1fe1e8a6a6d4d11cbb119a876f013ca0b13e164d075590d50029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1515570013625
+}
